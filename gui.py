@@ -1,6 +1,11 @@
 from Modules import functions
 import PySimpleGUI as sg
 import time
+import os
+
+if not os.path.exists('Text Files\ToDo.txt'):
+    with open('Text Files\ToDo.txt', 'w') as file:
+        pass
 
 sg.theme("DarkTeal10")
 
